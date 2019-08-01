@@ -8,7 +8,7 @@ class Show < ActiveRecord::Base
 
   def actors_list
     self.characters.actors.each do |a|
-      
+
     "#{a.first_name} #{a.last_name}"
 
   end
