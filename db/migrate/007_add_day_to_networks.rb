@@ -3,8 +3,8 @@ class AddDayToNetworks < ActiveRecord::Migration[5.1]
   #a new migration, and then in the change method,
   #we make the change.
   def change
-    add_column :network, :day, :string
-    add_column :network, :genre, :string
-    add_column :network, :season, :string
+    add_column :networks, :day, :string
+    add_column :networks, :genre, :string
+    add_column :networks, :season, :string
   end
 end
