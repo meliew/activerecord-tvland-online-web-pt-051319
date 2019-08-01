@@ -7,6 +7,9 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
+    self.characters.actors.each do |a|
+      
+    "#{a.first_name} #{a.last_name}"
 
   end
 
