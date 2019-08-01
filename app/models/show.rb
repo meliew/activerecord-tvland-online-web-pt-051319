@@ -10,6 +10,7 @@ class Show < ActiveRecord::Base
     self.characters.actors.each do |a|
 
     "#{a.first_name} #{a.last_name}"
+  end
 
   end
 
